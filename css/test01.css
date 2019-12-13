@@ -1,0 +1,28 @@
+* {
+  color: #ff7142;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ff7142;
+  background-color: #9bdcde;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.inner_container {
+  padding-top: 50px;
+}
+
+h1 {
+  color: olive;
+}
+
+.highlight {
+  color: grey;
+  font-size: 30px;
+  text-align: center;
+}

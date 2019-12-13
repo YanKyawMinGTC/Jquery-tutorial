@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Jquery</title>
+  <link rel="stylesheet" href="css/test01.css">
+  <script src="js/jquery.js"></script>
+  <!-- for cdn jquery
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <div class="container">
+      <div class="inner_container">
+        <h1 id="title">Test Jquery</h1>
+        <h2 class="sub_tit">Hello </h2 class="sub_tit">
+        <h2 class="sub_tit">Hi </h2>
+        <button class="">click</button>
+        <!-- <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit vitae officia eius, rerum
+          vero perferendis quod dolorem nesciunt eveniet qui dolore consectetur rem mollitia totam veniam amet quam eos
+          inventore!</p> -->
+        <form action="#">
+          <input type="text" placeholder="text">
+          <input type="password" placeholder="password">
+          <input type="number" placeholder="number">
+        </form>
+        <div><span>asdfasfdasdf</span></div>
+        <p>keypress</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $("document").ready(function () {
+      var i = 0;
+      $('input[type="text"]').keypress(function () {
+        $("span").text(i += 1);
+        $("p").hide().fadeIn();
+      });
+    });
+  </script>
+</body>
+
+</html>
